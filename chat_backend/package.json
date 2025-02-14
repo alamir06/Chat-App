@@ -1,0 +1,20 @@
+{
+  "name": "chat_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alamirew Wagaw",
+  "license": "ISC",
+  "description": "this is the real time chat app",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "http": "^0.0.1-security",
+    "pg": "^8.13.3",
+    "socket.io": "^4.8.1"
+  }
+}
