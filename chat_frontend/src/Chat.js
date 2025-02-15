@@ -2,6 +2,7 @@ import React, { useState, useEffect,useRef } from "react";
 import { io } from "socket.io-client";
 import "./chat.css";
 import { Link } from "react-router-dom";
+import Sidebar from "./Sidebar";
 
 const socket = io("http://localhost:5000");
 
@@ -58,13 +59,22 @@ useEffect(() => {
     }
   };
 
+   const handleKeyDown=(e)=>{
+      if (e.key === "Enter" && message.trim() !== "") {
+          sendMessage();
+      }
+  };
+   
   return (
+    
     <div className="container">
     <div className="link">
-    <Link  to='/view' className="view">view member</Link>
+   
     </div>
+    
       {!userJoined ? (
         <div className="joinContainer">
+        
           <input
             type="text"
             placeholder="Enter your name"
@@ -106,6 +116,7 @@ useEffect(() => {
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Type a message..."
               className="input"
+              onKeyDown={handleKeyDown}
             />
             <button onClick={sendMessage} className="button">
               Send
