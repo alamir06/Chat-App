@@ -1,0 +1,33 @@
+.card{
+    width: 300px;
+    height:  300px !important;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px  40px rgb(207, 235, 207);
+
+}
+.dep-text{
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: 500;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    text-transform: capitalize;
+    background-color: blue;
+    border-radius: 25px;
+}
+h1{
+    color: rgb(42, 211, 78);
+    font-family: cursive;
+}
+.image-head{
+    height: 270px;
+    border-radius: 25px;
+}
+.card:hover{
+ animation: hover alternate 0.5s ;
+}
+@keyframes hover{
+from{transform: scaleX(1);}
+to{transform: scaleX(1.2)}
+}

@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #9adf12;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    /* border: 10px solid red; */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #293f03;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: -250px;
+    transition: left 0.3s ease-in-out;
+}
+.sidebar:not(.open) ~ .main-content .close-btn{
+    margin-left: 150px;
+    font-size: 25px;
+}
+
+.close-btn
+{
+    margin-left: 125px;
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.sidebar.open {
+    left: 0;
+    margin-right: 50px;
+}
+.sidebar.open.home-header{
+    margin-left: 50px;
+}
+/* Sidebar Links */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar ul li:hover {
+    background: #555;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.sidebar:not(.open) ~ .main-content {
+    margin-left: 5px;
+    margin-right: 15px;
+}
+.hamburger{
+    height: 70px;
+    margin-bottom: 10px;
+}
+/* Menu Icon (Hamburger) */
+.menu-icon {
+    font-size: 30px;
+    background:green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20PX;
+    padding: 20PX;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.home-header{
+    background-color: green;
+    border-bottom: 5px solid white;
+    border-radius: 25px;
+    display: flex;
+    gap: 10px;
+    height: 120px;
+  
+}
+.title-header{
+    display: flex;
+    gap: 600px;
+    margin-left: 50px;
+}
+.name-injibara{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    color: white;
+    font-family: cursive;
+}
+.injibar-image{
+    width: 100px;
+    height: 100px;
+    src: url('../asset/images/injbara.png');
+    border-radius: 50%;
+}
+.name-system{
+    color: white;
+    font-family: cursive;
+}

@@ -1,0 +1,34 @@
+
+#departmnet,#home{
+    background-color: rgb(213, 228, 228);
+    border: 10PX solid burlywood;
+    border-radius: 25px;
+    margin: 20px;
+    color: black;
+    padding: 15px;
+}
+#departmnet,#home:hover{
+    animation: hover alternate 0.5s ;
+}
+@keyframes hover{
+    from{transform: scaleX(-10);}
+    to{transform: scaleX(-9.5)}
+    }
+.department-card{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    gap: 20px;
+    
+    
+}
+.deph1{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-style: oblique;
+}
+#home p{
+    color: rgb(46, 48, 40);
+}

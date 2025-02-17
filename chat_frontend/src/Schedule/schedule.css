@@ -1,0 +1,127 @@
+body{
+  background-color: #626F47;
+  
+}
+.bg-primary{
+    color: white;
+    font-family: cursive;
+    text-transform: capitalize;
+    font-size: 1rem;
+    text-align: center;
+    background-color:#000957 ;
+  }
+  .read,.edit,.delete{
+   
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px;
+  }
+  .read{
+    background-color: #009990;
+  }
+  .edit{
+    background-color: #009990;
+  }
+  
+  .table-with-borders {
+    border-collapse: collapse;
+    width: 100%;
+  
+    padding: 50px;
+  }
+  
+  .table-with-borders th,
+  .table-with-borders td {
+    border: 5px solid black;
+    padding: 8px;
+    text-align: left;
+  
+  }
+  
+  .btb{
+  border-bottom: 6px solid #23486A;
+  
+  }
+  .btb td{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .table-with-borders th{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .add{
+    margin: 15px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+  .add:hover{
+    transform: scaleY(1);
+  }
+  
+  .title{
+    margin-top: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-top: 15px;
+  }
+  
+  
+  .containerrr{
+    color: white;
+    font-family: cursive;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color:#000957 ;
+    margin: 100px;
+    width: 500px;
+    margin-left: 300px;
+    box-shadow: 0px 0px 100px #D91656;
+  }
+  .containerrr input{
+    color: #4B5945;
+  }
+  
+  .SAVE{
+    background-color: #D91656;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px;
+    width: 250PX;
+  }
+  .SAVE:hover{
+    background-color: #EB5B00;
+  }
+  .homecon{
+    color: white;
+    font-family: cursive;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color:#09122C ;
+    margin: 100px;
+    max-width: 1800px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 100px #D91656;
+  }
+  tbody{
+    text-align: center;
+  }
+  
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  
+  
+  
+  
+  

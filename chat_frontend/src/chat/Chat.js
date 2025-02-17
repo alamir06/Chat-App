@@ -1,8 +1,6 @@
 import React, { useState, useEffect,useRef } from "react";
 import { io } from "socket.io-client";
 import "./chat.css";
-import { Link } from "react-router-dom";
-import Sidebar from "./Sidebar";
 
 const socket = io("http://localhost:5000");
 
@@ -45,6 +43,11 @@ useEffect(() => {
   scrollToBottom();
 }, [messages]);
 
+const handlkeydown=(e)=>{
+  if (e.key === "Enter" && message.trim() !== "") {
+    joinChat();
+  }
+};
   const joinChat = () => {
     if (username.trim()) {
       socket.emit("join_chat", username);
@@ -64,6 +67,7 @@ useEffect(() => {
           sendMessage();
       }
   };
+
    
   return (
     
@@ -81,6 +85,7 @@ useEffect(() => {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             className="input"
+            onKeyDown={handlkeydown}
           />
           <button onClick={joinChat} className="button">
             Join Chat
